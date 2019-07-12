@@ -71,7 +71,7 @@ function finish(ts::TodyTestSet)
 
             problems = []
             nfails > 0 && push!(problems, "failures=$nfails")
-            nerrors > 0 && push!(problems, "errors=$nfails")
+            nerrors > 0 && push!(problems, "errors=$nerrors")
             print(join(problems, ", "))
 
             println(")")
