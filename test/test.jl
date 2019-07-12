@@ -21,7 +21,7 @@ TodyTestSet(desc::AbstractString; opts...) =
 function log(ts::TodyTestSet, str::AbstractString; err=false, fail=false)
     w = textwidth(str)
     column[] = column[] + w
-    column[] > WIDTH && (println(); column[] = 0)
+    column[] > WIDTH && (println(); column[] = w)
     (err || fail) ? printstyled(str, color=:red, bold=true) : print(str)
 end
 
