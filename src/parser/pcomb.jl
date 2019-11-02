@@ -11,7 +11,7 @@
 # over any whitespace; there is a version (&̲, i.e., &\underbar) that does not
 # skip over any whitespace. This is useful for more specific whitespace
 # matching, either for tight juxtaposition, for requiring whitespace (using
-# the sp parser), or for matching horizongal/non-breaking space (nbsp if space
+# the sp parser), or for matching horizontal/non-breaking space (nbsp if space
 # is required, or nbspᵋ if it's optional).
 #
 # Note that product and sum are specified as functions rather than variables,
