@@ -79,7 +79,7 @@ function pprint(io::IO, x::Ex; hang=false, indent=0)
 
     print(io, "(")
 
-    headstr = ppfmt(head(x))                     # Never break the head
+    headstr = ppfmt(head(x))                    # Never break the head
     print(io, headstr)
 
     headw = textwidth(headstr)
